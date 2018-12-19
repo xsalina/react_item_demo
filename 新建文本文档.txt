@@ -1,0 +1,9 @@
+ create-react-app �ļ���
+
+1�����������ļ�
+npm run eject
+npm install node-sass -D
+
+2����װ��������Ŀ����
+ cnpm i react-router-dom antd axios -S
+
