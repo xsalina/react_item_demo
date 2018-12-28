@@ -13,6 +13,8 @@
   
   npm run eject
   
+  npm install
+  
   npm i node-sass -D
 
 
