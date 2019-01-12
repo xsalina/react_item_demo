@@ -20,7 +20,7 @@
 
 2、安装基本的项目依赖
   
-  cnpm i react-router-dom antd axios -S
+  cnpm i react-router-dom  -S
   
   
 
