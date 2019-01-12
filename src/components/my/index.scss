@@ -1,0 +1,258 @@
+.my{
+
+
+  //登录
+  .login{
+    height:1.66rem;
+    padding: .32rem 0;
+    background: url("./img/bg.png") center 0 #f37d0f;
+    background-size: auto 100%;
+    a{
+      display:flex;
+      align-items:center;
+      img{
+        width:.96rem;
+        height:.96rem;
+        margin: 0 .16rem 0 .32rem;
+        border-radius:50%;
+      }
+      div{
+        font-size: .24rem;
+        color:white;
+      }
+    }
+
+  }
+
+  //我的订单
+  .order{
+    height: .8rem;
+    padding: 0 .32rem;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+
+    .myorder{
+      height:100%;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+
+      .title{
+          font-size: .28rem;
+      }
+      .totalorder{
+          height:100%;
+
+          font-size: .24rem;
+        a{
+          width:100%;
+          height:100%;
+          display:flex;
+          align-items:center;
+
+
+          p{
+
+            font-size: .24rem;
+          }
+          i{
+            width: .2rem;
+            margin-right: .1rem;
+            font-size: .45rem;
+            line-height: .45rem;
+            color: rgba(0,0,0,.54);
+          }
+
+        }
+
+
+      }
+    }
+
+  }
+
+
+
+  //代付款
+  .orderdetail{
+
+    ul{
+      padding: .4rem .8rem;
+      display:flex;
+      justify-content: space-between;
+
+      li{
+
+        a{
+          text-align:center;
+
+          img{
+            width: .48rem;
+            height: .48rem;
+          }
+          p{
+            font-size:12px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  //会员中心
+
+  .personalcenter{
+
+
+    //两个一个列的
+    .twoChild{
+      height:2.4rem;
+      padding: 0 .32rem;
+
+      li{
+        height:50%;
+
+        a{
+          width:100%;
+          height:100%;
+          display:flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .pic{
+
+
+            img{
+
+              width:.5rem;
+              height:.5rem;
+              margin:auto 0;
+
+            }
+
+          }
+          .border{
+            border-bottom: 1px solid rgba(0,0,0,.15);
+          }
+
+          .flex{
+
+            width:calc(100% - .8rem);
+            height:100%;
+            line-height:1.2rem;
+            margin-left:.3rem;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+
+                //float:left;
+                font-size: .28rem;
+            }
+            i{
+              //float:right;
+              width: .2rem;
+              height:.2rem;
+              margin:.5rem .09rem .5rem 0;
+              font-size: .45rem;
+              line-height: .3rem;
+              color: rgba(0, 0, 0, 0.54);
+            }
+
+
+          }
+
+
+        }
+      }
+    }
+
+
+
+    .oneChild{
+      height:1.2rem;
+      padding: 0 .32rem;
+
+      li{
+        height:100%;
+
+        a{
+          width:100%;
+          height:100%;
+          display:flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .pic{
+
+
+            img{
+
+              width:.5rem;
+              height:.5rem;
+              margin:auto 0;
+
+            }
+
+          }
+          .border{
+            border-bottom: 1px solid rgba(0,0,0,.15);
+          }
+
+          .flex{
+
+            width:calc(100% - .8rem);
+            height:100%;
+            line-height:1.2rem;
+            margin-left:.3rem;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+
+              //float:left;
+              font-size: .28rem;
+            }
+            i{
+              //float:right;
+              width: .2rem;
+              height:.2rem;
+              margin:.5rem .09rem .5rem 0;
+              font-size: .45rem;
+              line-height: .3rem;
+              color: rgba(0, 0, 0, 0.54);
+            }
+
+
+          }
+
+
+        }
+      }
+    }
+  }
+
+
+
+  .spacing{
+    height: .2rem;
+    background: #f5f5f5;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

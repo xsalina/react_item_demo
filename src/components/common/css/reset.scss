@@ -1,13 +1,16 @@
 html {
-    font-family: 'Helvetica Neue',Tahoma,Arial,PingFangSC-Regular,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    color: #333;
-    user-select: none;
-    font-size: 13.33333vw;
+  font-family: "Helvetica Neue", Tahoma, Arial, PingFangSC-Regular,
+    "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  -webkit-font-smoothing: antialiased; /*chrome、safari  抗锯齿渲染可以使字体看起来会更清晰舒服*/
+  -moz-osx-font-smoothing: grayscale; /*firefox*/
+  -webkit-text-size-adjust: 100%; /* 解决默认会放大文字的问题 */
+  text-size-adjust: none;
+  color: #333;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 13.3333vw;
 
-    /*
+  /*
     100vw 屏幕宽
       设备屏幕也要分成7.5等分
       每一个等分是 100/7.5 = 13.33333             //10000/750(设计图) = 13.3333vw
@@ -17,34 +20,47 @@ html {
 
 
   */
-
 }
 .enFont {
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
 }
 
 body {
-    background-color: #fff;
-    font-size: 12px;
+  background-color: #fff;
+  font-size: 14px;
 }
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 a {
-    text-decoration: none;
-    color: #333;
+  display: block;
+  text-decoration: none;
+  color: #333;
 }
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-ol,ul,dl{
-    margin: 0 !important;
+ol,
+ul,
+dl {
+  margin: 0 !important;
 }
-
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.active{
+  color:orange;
+}
+//.App{
+//  height:1500px;
+//}
