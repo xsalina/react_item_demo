@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import "./index.scss"
+import "./index.scss";
+import {Link} from 'react-router-dom';
 class Index extends Component {
     state = {
         data:[]
@@ -28,9 +29,9 @@ class Index extends Component {
                     data.length > 0 &&(
                         data.map((item,index) =>{
                             return(
-                                <a key={item.id} href="/">
+                                <Link key={item.id} to={`/shopbuy/${item.shopid}`}>
                                     <img src={item.picurl} alt={item.alt}/>
-                                </a>
+                                </Link>
                             )
                         })
                     )

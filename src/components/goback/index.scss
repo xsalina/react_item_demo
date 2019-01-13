@@ -1,0 +1,13 @@
+.goback{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:1rem;
+
+  .back{
+    font-size:.6rem;
+  }
+  .share{
+    font-size:.6rem;
+  }
+}

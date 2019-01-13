@@ -58,6 +58,17 @@ dl {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearFix:after{
+  content:'';
+  display:block;
+  clear:both;
+}
 .active{
   color:orange;
 }

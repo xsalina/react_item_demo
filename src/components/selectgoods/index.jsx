@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import "./index.scss"
+import {Link} from 'react-router-dom';
+import BaseLine from '../baseline/index.jsx'
 class Index extends Component {
     state = {
         data: []
@@ -29,14 +31,14 @@ class Index extends Component {
                             data.map((item,index) =>{
                                 return(
                                     <li key={item.id}>
-                                        <a href="">
+                                        <Link to={`/shopbuy/${item.shopid}`}>
                                             <img src={item.picurl} alt={item.title}/>
                                             <div className={"goods_detail"}>
                                                 <h3 className={"ellipsis"}>{item.title}</h3>
                                                 <p className={"explain ellipsis"}>{item.des}</p>
                                                 <p className={'price'}>{item.symbol} {item.price} {item.font}</p>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </li>
                                 )
                             })
@@ -47,6 +49,7 @@ class Index extends Component {
                     }
 
                 </ul>
+                <BaseLine />
             </div>
         );
     }

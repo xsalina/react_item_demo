@@ -7,8 +7,7 @@ import Miplay from '../miplay/index.jsx'
 import Conference from '../conference/index.jsx'
 import SelectGoods from '..//selectgoods/index.jsx'
 import TabBar from '../tabbar/index'
-import ShopBuy from '../shopbuy/index'
-import ShopCart from '../shopcart/index'
+
 class Index extends Component {
     render() {
         return (
