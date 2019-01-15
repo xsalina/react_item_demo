@@ -3,6 +3,8 @@
   
   动态请求数据接口
   
+  react-redux管理数据
+  
   布局--纯手写
   
   vw
@@ -21,6 +23,5 @@
 2、安装基本的项目依赖
   
   cnpm i react-router-dom  -S
-  
-  
+
 
