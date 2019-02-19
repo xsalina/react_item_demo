@@ -13,7 +13,7 @@ class Index extends Component {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink  to="/fenlei">
+                        <NavLink  to="/classify">
                             <i className={"iconfont icon-fenlei"}></i>
                             <span>分类</span>
                         </NavLink>

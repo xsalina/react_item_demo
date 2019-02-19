@@ -110,7 +110,12 @@
       }
     }
     .goPayment{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
       width: 2.20rem;
+      /* height: .6rem; */
       background: #e4393c;
       color: #fff;
       span{
