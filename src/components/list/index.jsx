@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import "./index.scss"
 import {Link} from 'react-router-dom';
 import BaseLine from '../baseline/index.jsx'
-
+import Goback from "../goback/index.jsx";
 class Index extends Component {
     state = {
         data: []
@@ -25,7 +25,7 @@ class Index extends Component {
         //console.log(data)
         return (
             <div className={"selectgoods"}>
-
+                <Goback/>
                 <ul>
 
                     {

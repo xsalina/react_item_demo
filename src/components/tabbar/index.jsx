@@ -1,8 +1,16 @@
 import React, {Component} from 'react';
 import './index.scss';
 import {NavLink} from 'react-router-dom';
+import {connect} from "react-redux";
+import {getGoodsNum} from "../../actions/cart";
+
+@connect(
+    state=>({shop:state}),
+    {}
+)
 class Index extends Component {
     render() {
+        let num = this.props.shop.cartCount.data || false
         return (
             <div className={"tabbar"} >
                 <ul>
@@ -19,6 +27,7 @@ class Index extends Component {
                         </NavLink>
                     </li>
                     <li>
+                        <strong>{num}</strong>
                         <NavLink  to="/shopcart">
                             <i className={"iconfont icon-gouwuche"}></i>
                             <span>购物车</span>

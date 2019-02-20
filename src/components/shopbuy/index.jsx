@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import "./index.scss"
 import GoBack from '../goback/index.jsx'
 import {connect} from 'react-redux'
@@ -10,7 +11,9 @@ import {addCart} from "../../actions/cart";
 )
 class Index extends Component {
     state = {
-        data: {}
+        data: {},
+        num:0,
+        id:0
     }
 
     componentDidMount() {
@@ -19,39 +22,74 @@ class Index extends Component {
             .then(res => res.json())
             .then((res) => {
                 this.setState({
-                    data: res
+                    data: res,
+                    id:shopid
                 })
             })
-        console.log(this.props)
+        //console.log(this.props)
     }
 
+    submitRedux = () => {
+        let {num,id} = this.state;
+        let {addCart} = this.props
+        num && (
+            addCart({
+                id,
+                num
+            })
+        )
+    }
+    //减少
+    reduceGoods = () => {
+        let num = this.state.num;
+        num = num?--num:num
+        this.setState({num});
+    }
+    //增加
+    addGoods = () => {
+        let num = this.state.num;
+        num ++
+        this.setState({num});
+    }
     render() {
-        const {shopid, picurl, title, price, des, symbol, font, id} = this.state.data;
 
+        let {num,data} = this.state;
         return (
             <div>
 
                 <div className="shopdedatils">
                     <GoBack />
-                    <img src={picurl} width="100%" alt={title}/>
-                    <h3 className={'title'}>{title}</h3>
-                    <h3 className={'des'}>{des}</h3>
+                    <img src={data.picurl} width="100%" alt={data.title}/>
+                    <h3 className={'title'}>{data.title}</h3>
+                    <h3 className={'des'}>{data.des}</h3>
                     <p className="money">
-                        <span className="symbol">{symbol}</span>
-                        <span className="price">{price}</span>
+                        <span className="symbol">{data.symbol}</span>
+                        <span className="price">{data.price}</span>
                     </p>
                     <p className="courier">快递：包邮 <span className="fr"></span></p>
                     <div className="buyNum clearFix">
                         <p className="fl buyfont">购买数量</p>
                         <p className="addNum fr">
-                            <a href="javascript:;" className="reduce">-</a>
-                            <a href="javascript:;" className="num">0</a>
-                            <a href="javascript:;" className="add">+</a>
+                            <a
+                                href="javascript:;"
+                                className="reduce"
+                                onClick={this.reduceGoods}
+                            >-</a>
+                            <a href="javascript:;" className="num">{num}</a>
+                            <a
+                                href="javascript:;"
+                                className="add"
+                                onClick={this.addGoods}
+                            >+</a>
                         </p>
                     </div>
                     <div className="buy">
-                        <a href="javascript:;" className="addCart">加入购物车</a>
-                        <a href="/" className="nowBuy">立即购买</a>
+                        <a
+                            href="javascript:;"
+                            className="addCart"
+                            onClick={this.submitRedux}
+                        >加入购物车</a>
+                        <Link to='/shopcart' className="nowBuy">立即购买</Link>
                     </div>
                 </div>
                 {/*<TabBar/>*/}
