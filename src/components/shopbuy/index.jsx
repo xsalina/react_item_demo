@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
 import "./index.scss"
 import GoBack from '../goback/index.jsx'
+import {connect} from 'react-redux'
+import {addCart} from "../../actions/cart";
 
+@connect(
+    state=>({shop:state}),
+    {addCart}
+)
 class Index extends Component {
     state = {
         data: {}
@@ -16,6 +22,7 @@ class Index extends Component {
                     data: res
                 })
             })
+        console.log(this.props)
     }
 
     render() {
