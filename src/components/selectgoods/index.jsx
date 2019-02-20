@@ -34,7 +34,7 @@ class Index extends Component {
                                 return(
                                     <li key={item.id}>
                                         <Link to={`/shopbuy/${item.shopid}`}>
-                                            <img src={item.picurl} alt={item.title}/>
+                                           <img src={item.picurl} alt={item.title}/>
                                             <div className={"goods_detail"}>
                                                 <h3 className={"ellipsis"}>{item.title}</h3>
                                                 <p className={"explain ellipsis"}>{item.des}</p>
