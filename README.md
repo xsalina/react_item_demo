@@ -1,4 +1,4 @@
-# React_Item   如图
+# React_Item   如图或直接访问http://47.101.37.211/xiaomi/
 ![Image text](https://github.com/xsalina/react_item_demo/blob/master/src/images/1.jpg)
   create-react-app
   
