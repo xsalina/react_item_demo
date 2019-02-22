@@ -7,7 +7,7 @@ import Miplay from '../miplay/index.jsx'
 import Conference from '../conference/index.jsx'
 import SelectGoods from '..//selectgoods/index.jsx'
 import TabBar from '../tabbar/index'
-import lazyload from "react-lazyload";
+import Lazyload from "react-lazyload";
 class Index extends Component {
     render() {
         return (
@@ -17,7 +17,7 @@ class Index extends Component {
                 <Classfily/>
                 <Miplay/>
                 <Conference />
-                <lazyload height={200}><SelectGoods /></lazyload>
+                <Lazyload height={200}><SelectGoods /></Lazyload>
 
 
                 <TabBar/>

@@ -4,12 +4,12 @@ import Home from './components/home/index.jsx'
 import ShopCart from './components/shopcart/index.jsx'
 import ShopBuy from './components/shopbuy/index'
 import My from "./components/my/index.jsx";
-import classify from './components/list'
+import classify from './components/list';
 import NotFound from "./components/notfound/index.jsx"
 class App extends Component {
   render() {
     return (
-        <Router>
+        <Router basename={'xiaomi'}>
             <Switch>
                 <Route exact path={'/'} component={Home}></Route>
                 <Route path={'/shopcart'} component={ShopCart}></Route>

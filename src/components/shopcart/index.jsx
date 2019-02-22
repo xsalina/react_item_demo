@@ -38,7 +38,7 @@ class Index extends Component {
         let timer = setTimeout(() => {
             clearTimeout(timer)
             this.totallyPrice()
-        },200)
+        },400)
     }
 
     //总价格.数量
@@ -59,6 +59,7 @@ class Index extends Component {
 
     componentDidMount() {
         this.getData()
+
     }
     //删除
     delGoods = (index) => {

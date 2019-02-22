@@ -1,6 +1,7 @@
 {
   "name": "react-hungry",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@babel/core": "7.1.0",
@@ -75,6 +76,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
     "node-sass": "^4.11.0"
   },
   "jest": {

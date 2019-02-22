@@ -31,7 +31,7 @@ class Index extends Component {
 
     submitRedux = () => {
         let {num,id} = this.state;
-        let {addCart} = this.props
+        let {addCart} = this.props;
         num && (
             addCart({
                 id,
@@ -89,7 +89,11 @@ class Index extends Component {
                             className="addCart"
                             onClick={this.submitRedux}
                         >加入购物车</a>
-                        <Link to='/shopcart' className="nowBuy">立即购买</Link>
+                        <Link
+                            to='/shopcart'
+                            className="nowBuy"
+                            //onClick={this.submitRedux}
+                        >立即购买</Link>
                     </div>
                 </div>
                 {/*<TabBar/>*/}
